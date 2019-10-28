@@ -4,4 +4,7 @@ class Calculator:
         x=2
         self.result=x+1
 
+    def add(self,a,b):
+        return (a+b)
+
 
