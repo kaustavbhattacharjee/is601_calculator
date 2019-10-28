@@ -1,10 +1,18 @@
 class Calculator:
-    result=2
+
     def __init__(self):
-        x=2
-        self.result=x+1
+        pass
 
     def add(self,a,b):
         return (a+b)
 
-
+    def subtract(self,a,b):
+        return (a-b)
+    def multiply(self,a,b):
+        return (a*b)
+    def divide(self,a,b):
+        return (a/b)
+    def square(self,a):
+        return (a**2)
+    def square_root(self,a):
+        return (a**0.5)
