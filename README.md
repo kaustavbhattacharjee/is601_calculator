@@ -1,4 +1,4 @@
-# is601101-19_assignment
+# is601_calculator
 
 ## Homework Description
 
