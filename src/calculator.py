@@ -9,6 +9,15 @@ def subtraction(a,b):
 def multiplication(a,b):
     return (a*b)
 
+def division(a,b):
+    return round(float(b/a),9)
+
+def squaring(a):
+    return (a**2)
+
+def square_rooting(a):
+    getcontext().prec = 10
+    return (Decimal(a) ** Decimal(0.5))
 class Calculator:
 
     def __init__(self):
@@ -22,9 +31,8 @@ class Calculator:
     def multiply(self,a,b):
         return multiplication(a,b)
     def divide(self,a,b):
-        return round(float(b/a),9)
+        return division(a,b)
     def square(self,a):
-        return (a**2)
+        return squaring(a)
     def square_root(self,a):
-        getcontext().prec = 10
-        return (Decimal(a)**Decimal(0.5))
+        return square_rooting(a)
