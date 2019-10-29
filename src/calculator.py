@@ -6,6 +6,9 @@ def addition(a,b):
 def subtraction(a,b):
     return (b - a)
 
+def multiplication(a,b):
+    return (a*b)
+
 class Calculator:
 
     def __init__(self):
@@ -17,7 +20,7 @@ class Calculator:
     def subtract(self,a,b):
         return subtraction(a,b)
     def multiply(self,a,b):
-        return (a*b)
+        return multiplication(a,b)
     def divide(self,a,b):
         return round(float(b/a),9)
     def square(self,a):
