@@ -1,4 +1,5 @@
 import unittest,csv
+from decimal import *
 from Calculator import Calculator
 
 class MyTestCase(unittest.TestCase):
@@ -81,6 +82,21 @@ class MyTestCase(unittest.TestCase):
             b=int(row[1])
             #c=int(row[2])
             exp_result=calculator.square(a)
+            self.assertEqual(exp_result,b)
+
+    def test_square_root(self):
+        calculator = Calculator()
+        test_add_file_path = "./src/square_root.csv"
+        csv_reader = csv.reader(open(test_add_file_path, 'r'), delimiter=',')
+        next(csv_reader)
+        test_add_row_list=list()
+        for row in csv_reader:
+            test_add_row_list.append(row)
+        for row in test_add_row_list:
+            a=int(row[0])
+            b=Decimal(row[1])
+            #c=float(row[2])
+            exp_result=calculator.square_root(a)
             self.assertEqual(exp_result,b)
 
 if __name__ == '__main__':

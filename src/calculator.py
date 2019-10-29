@@ -1,10 +1,15 @@
+from decimal import *
+
+def addition(a,b):
+    return (a + b)
+
 class Calculator:
 
     def __init__(self):
         pass
 
     def add(self,a,b):
-        return (a + b)
+        return addition(a,b)
 
     def subtract(self,a,b):
         return (b-a)
@@ -15,4 +20,5 @@ class Calculator:
     def square(self,a):
         return (a**2)
     def square_root(self,a):
-        return (a**0.5)
+        getcontext().prec = 10
+        return (Decimal(a)**Decimal(0.5))
