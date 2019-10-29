@@ -3,6 +3,9 @@ from decimal import *
 def addition(a,b):
     return (a + b)
 
+def subtraction(a,b):
+    return (b - a)
+
 class Calculator:
 
     def __init__(self):
@@ -12,7 +15,7 @@ class Calculator:
         return addition(a,b)
 
     def subtract(self,a,b):
-        return (b-a)
+        return subtraction(a,b)
     def multiply(self,a,b):
         return (a*b)
     def divide(self,a,b):
