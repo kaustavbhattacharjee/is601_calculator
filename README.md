@@ -14,4 +14,10 @@ You need to make at least 7 unit tests and should develop your tests as you writ
 1. Your program works
 1. Your docker file is setup to run the program 
 
+## Output:
+
+The tests are running properly and below is the screenshot of the same:
+
+![Tests Successful](images/Calculator_Tests_Successful_KB)
+
 
