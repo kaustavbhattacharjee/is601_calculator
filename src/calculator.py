@@ -11,7 +11,7 @@ class Calculator:
     def multiply(self,a,b):
         return (a*b)
     def divide(self,a,b):
-        return (a/b)
+        return round(float(b/a),9)
     def square(self,a):
         return (a**2)
     def square_root(self,a):
