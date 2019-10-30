@@ -1,15 +1,7 @@
 import unittest,csv
 from decimal import *
 from Calculator.Calculator import Calculator
-
-def read_csv(path):
-    test_add_file_path = path
-    csv_reader = csv.reader(open(test_add_file_path, 'r'), delimiter=',')
-    next(csv_reader)
-    test_row_list = list()
-    for row in csv_reader:
-        test_row_list.append(row)
-    return test_row_list
+from CsvReader.my_csv_reader import read_csv
 
 class MyTestCase(unittest.TestCase):
     calculator = Calculator()  #common object for all the test methods

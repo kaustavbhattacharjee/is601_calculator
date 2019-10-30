@@ -1,23 +1,10 @@
-from decimal import *
+from Calculator.Def_Files.Addition import addition
+from Calculator.Def_Files.Subtraction import subtraction
+from Calculator.Def_Files.Multiplication import multiplication
+from Calculator.Def_Files.Division import division
+from Calculator.Def_Files.Square import squaring
+from Calculator.Def_Files.SquareRoot import square_rooting
 
-def addition(a,b):
-    return (a + b)
-
-def subtraction(a,b):
-    return (b - a)
-
-def multiplication(a,b):
-    return (a*b)
-
-def division(a,b):
-    return round(float(b/a),9)
-
-def squaring(a):
-    return (a**2)
-
-def square_rooting(a):
-    getcontext().prec = 10
-    return (Decimal(a) ** Decimal(0.5))
 class Calculator:
 
     def __init__(self):
