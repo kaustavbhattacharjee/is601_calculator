@@ -11,7 +11,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.calculator,Calculator)
 
     def test_add(self):
-        test_row_list = read_csv("/Tests/Data/addition.csv")
+        test_row_list = read_csv("addition.csv")
         for row in test_row_list:
             a=int(row[0])
             b=int(row[1])
@@ -20,7 +20,7 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(exp_result,c)
 
     def test_subtract(self):
-        test_row_list = read_csv("/Tests/Data/subtraction.csv")
+        test_row_list = read_csv("subtraction.csv")
         for row in test_row_list:
             a=int(row[0])
             b=int(row[1])
@@ -29,7 +29,7 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(exp_result,c)
 
     def test_multiply(self):
-        test_row_list = read_csv("/Tests/Data/multiplication.csv")
+        test_row_list = read_csv("multiplication.csv")
         for row in test_row_list:
             a=int(row[0])
             b=int(row[1])
@@ -38,7 +38,7 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(exp_result,c)
 
     def test_divide(self):
-        test_row_list = read_csv("/Tests/Data/division.csv")
+        test_row_list = read_csv("division.csv")
         for row in test_row_list:
             a=int(row[0])
             b=int(row[1])
@@ -47,7 +47,7 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(exp_result,c)
 
     def test_square(self):
-        test_row_list = read_csv("/Tests/Data/square.csv")
+        test_row_list = read_csv("square.csv")
         for row in test_row_list:
             a=int(row[0])
             b=int(row[1])
@@ -56,7 +56,7 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(exp_result,b)
 
     def test_square_root(self):
-        test_row_list = read_csv("/Tests/Data/square_root.csv")
+        test_row_list = read_csv("square_root.csv")
         for row in test_row_list:
             a=int(row[0])
             b=Decimal(row[1])
